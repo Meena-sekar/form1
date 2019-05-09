@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form-Task</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- FORM SECTION BEGINS -->
+
+<form action="" method="POST" autocomplete="on">
+	<fieldset>
+		<legend>Personal Information</legend>
+
+		<!-- PERSONAL DETAILS TO BE ENTERED -->
+
+		<label for="name">Name : </label>
+		<input type="text" id="name" name="name" value="" placeholder="Enter Name" required><br>
+		<label for="rollno">Roll No : </label>
+		<input type="text" id="rollno" name="rollno" value="" placeholder="Enter Roll-No" required><br>
+		<label for="emp-id">Emp-Id : </label>
+		<input type="text" id="rollno" name="emp-id" value="" placeholder="Enter Employee ID" required><br>
+		<label for="psd">Password : </label>
+		<input type="password" id="psd" name="password" value="" placeholder="Enter password" required><br>
+
+		<!-- PREDEFINED OPTIONS FOR COUNTRIES -->
+		<label for="country">Country : </label>
+		<input type="text" list="country" name=""><br>
+		<datalist id="country">
+			<option value="India">India</option>
+			<option value="Canada">Canada</option>
+			<option value="Germany">Germany</option>
+			<option value="Europe">Europe</option>
+			<option value="Arabi">Arabi</option>
+			<option value="Norway">Norway</option>
+			<option value="China">China</option>
+		</datalist>
+
+		<!-- Gender section begins -->
+
+		<label for="gender">Gender : </label><br>
+		<input type="radio" name="gender" value="Male"> Male <br>
+		<input type="radio" name="gender" value="Female"> Female <br>
+		<input type="radio" name="gender" value="Other"> Other<br>
+
+		<!-- Checkbox section for Hobbies -->
+
+		<label for="hobbies">Interest :</label>
+		<input type="checkbox" name="hobby1"  value="drawing">Drawing<br>
+		<input type="checkbox" name="hobby2"  value="travelling">Travelling<br>
+		<input type="checkbox" name="hobby3"  value="Singing">Singing<br>
+		<input type="checkbox" name="hobby4"  value="Roaming">Roaming<br>
+		<input type="submit" name="submit" value="submit">
+
+
+	</fieldset>
+</form>
+</body>
+</html>
